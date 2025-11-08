@@ -1,0 +1,7 @@
+{
+  "name": "YokaiScan",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
