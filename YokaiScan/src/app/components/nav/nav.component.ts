@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { IonicModule } from '@ionic/angular';
+import { IonHeader, IonImg, IonTitle, IonToolbar } from '@ionic/angular/standalone';
+
 
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.scss'],
-  imports: [IonicModule],
+  standalone: true,
+  imports: [IonHeader, IonTitle, IonImg, IonToolbar],
 })
 export class NavComponent  implements OnInit {
 

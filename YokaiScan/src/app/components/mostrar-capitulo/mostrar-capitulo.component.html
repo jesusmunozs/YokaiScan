@@ -1,3 +1,12 @@
-<div class="capitulo" ngFor="let pagina of paginas">
-  <ion-img src="{{ img }}" alt="Latna saga cap1"></ion-img>
-</div>
+<ion-button (click)="onCharacters()" expand="block" fill="clear" shape="round">
+  Personajes
+</ion-button>
+
+<ion-button (click)="onPlanets()" expand="block" fill="clear" shape="round">
+  Planetas
+</ion-button>
+
+<ion-card *ngFor="let p of paginas" class="card-container">
+  <ion-img [src]="p.image" class="img"></ion-img>
+  <h1>{{ p.name }}</h1>
+</ion-card>
